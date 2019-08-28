@@ -21,7 +21,7 @@ class generic_converter:
         if mongo_uri_or_db_name.startswith("mongodb://"): # mongodb uri given
             client = MongoClient(mongo_uri_or_db_name)
             db = client[mongo_uri_or_db_name.split("/")[-1]]
-        else: # database name given
+        else: # database name is given
             client = MongoClient()
             db = client[mongo_uri_or_db_name]
         collection_obj = db[sys.argv[2]]
