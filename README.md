@@ -7,3 +7,13 @@ mongoexport --db database --collection collection  --type=csv --fields field1,fi
 
 2. Convert non-regular json to normal for exporting
 For instance, the following json (from MongoDB) is not in the regular format, we cannot do much to the json (map reduce, aggregate, pipline operation etc.), we need convert it to normal table, export to csv/table or re-dump into MongoDB.
+
+##Dependency
+
+1. Unicodecsv
+
+   pip install unicodecsv
+   
+2. MongoClient from pymongo
+
+    pip install pymongo
