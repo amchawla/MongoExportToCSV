@@ -17,3 +17,11 @@ For instance, the following json (from MongoDB) is not in the regular format, we
 2. MongoClient from pymongo
 
     pip install pymongo
+
+
+To run mongoexportcsv :
+1) Clone the git repository
+2) python mongoexportcsv.py <db_name_or_mongodb_uri> <collection_name> <path_to_output_file_name>
+
+Notes:
+The first of the arguments can the name of your database or a complete mongoDb URI: mongodb://username:password@host:port/databaseName
